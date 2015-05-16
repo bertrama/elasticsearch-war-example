@@ -1,0 +1,3 @@
+/src/main/webapp/WEB-INF/elasticsearch.yml
+/src/main/webapp/WEB-INF/jboss-web.xml
+/target

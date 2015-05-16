@@ -1,0 +1,24 @@
+---
+cluster:
+  name: elastic-search-cluster-name
+
+node:
+  local: true
+  name: node-name
+
+path:
+  data: /var/lib/elastic-search
+  log: /var/log/elastic-search
+
+index:
+  number_of_shards: 1
+  number_of_replicas: 0
+
+network:
+  host: 127.0.0.1
+
+discovery:
+  zen:
+    ping:
+      multicast:
+        enabled: false

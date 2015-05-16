@@ -2,12 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <properties>
+      <version.elasticsearch>1.5.2</version.elasticsearch>
+      <version.elasticsearch.transport-wares>2.5.0</version.elasticsearch.transport-wares>
+    </properties>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>javanna.net</groupId>
-    <artifactId>elasticsearch-war-example</artifactId>
+    <groupId>edu.umich.lib</groupId>
+    <artifactId>bertrama-elasticsearch</artifactId>
     <packaging>war</packaging>
-    <version>1.0</version>
+    <version>${version.elasticsearch}</version>
 
     <repositories>
         <repository>
@@ -22,14 +26,14 @@
         <dependency>
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch</artifactId>
-            <version>0.19.3</version>
+            <version>${version.elasticsearch}</version>
             <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch-transport-wares</artifactId>
-            <version>1.2.0</version>
+            <version>${version.elasticsearch.transport-wares}</version>
             <scope>compile</scope>
             <exclusions>
                 <exclusion>
